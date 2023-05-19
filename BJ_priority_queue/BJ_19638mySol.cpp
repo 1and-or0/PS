@@ -3,15 +3,6 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    // cout << "hello world" << "\n";
-
-    // int a = 0;
-    // for(int i = 0; i < 10; i++)
-    // {
-    //     a += i;
-    //     cout << a << " ";
-    // }
-    
     ios::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
     priority_queue<double> p_q; // 오름차순 정렬 우선순위 큐
     int n; double h; int t;
