@@ -1,0 +1,7 @@
+﻿  Cmp_.cpp
+D:\Users\ErrorOrError\source\repos\C++6 - 1 sol\AssortSol1\Cmp_.cpp(28,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\Users\ErrorOrError\source\repos\C++6 - 1 sol\AssortSol1\Cmp_.cpp(47,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\Users\ErrorOrError\source\repos\C++6 - 1 sol\AssortSol1\Cmp_.cpp(63,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\Users\ErrorOrError\source\repos\C++6 - 1 sol\AssortSol1\Cmp_.cpp(83,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+  main.cpp
+  코드를 생성하고 있습니다...

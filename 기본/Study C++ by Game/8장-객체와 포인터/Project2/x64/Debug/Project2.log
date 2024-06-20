@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\8장-객체와 포인터\Project2\main.cpp(25,10): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\8장-객체와 포인터\Project2\main.cpp(12,10): warning C4101: 's1' :참조되지 않은 지역 변수입니다.
+  Project2.vcxproj -> D:\Users\ErrorOrError\source\repos\Study_C++_Game\8장-객체와 포인터\x64\Debug\Project2.exe

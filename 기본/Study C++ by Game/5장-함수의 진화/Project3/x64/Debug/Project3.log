@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\5장-함수의 진화\Project3\main.cpp(33,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\5장-함수의 진화\Project3\main.cpp(33,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int *' 형식의 인수 1과(와) 충돌합니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\5장-함수의 진화\Project3\main.cpp(34,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\5장-함수의 진화\Project3\main.cpp(34,9): warning C4313: 'printf': 서식 문자열의 '%d'이(가) int *' 형식의 인수 1과(와) 충돌합니다.
+  Project3.vcxproj -> D:\Users\ErrorOrError\source\repos\Study_C++_Game\5장-함수의 진화\x64\Debug\Project3.exe

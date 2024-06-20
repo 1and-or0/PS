@@ -1,0 +1,3 @@
+﻿  GameOver.cpp
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\1장-프로그래밍기초\GameOver\GameOver.cpp(4,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  GameOver.vcxproj -> D:\Users\ErrorOrError\source\repos\Study_C++_Game\1장-프로그래밍기초\x64\Debug\GameOver.exe

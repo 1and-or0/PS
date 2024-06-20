@@ -1,0 +1,9 @@
+﻿  main.cpp
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(6,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(20,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(20,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(21,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(21,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(22,9): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\Project2\main.cpp(22,9): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  Project2.vcxproj -> D:\Users\ErrorOrError\source\repos\Study_C++_Game\4장-배열, 구조체와 파일\x64\Debug\Project2.exe

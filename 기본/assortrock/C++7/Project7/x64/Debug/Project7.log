@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Users\ErrorOrError\source\repos\C++7\Project7\main.cpp(29,15): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+  Project7.vcxproj -> D:\Users\ErrorOrError\source\repos\C++7\x64\Debug\Project7.exe

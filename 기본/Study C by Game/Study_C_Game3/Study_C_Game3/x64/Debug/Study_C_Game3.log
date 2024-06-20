@@ -1,0 +1,4 @@
+﻿  Study_C_Game3.cpp
+D:\Users\ErrorOrError\source\repos\Study_C_Game3\Study_C_Game3\Study_C_Game3.cpp(36,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Users\ErrorOrError\source\repos\Study_C_Game3\Study_C_Game3\Study_C_Game3.cpp(82,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Study_C_Game3.vcxproj -> D:\Users\ErrorOrError\source\repos\Study_C_Game3\x64\Debug\Study_C_Game3.exe
