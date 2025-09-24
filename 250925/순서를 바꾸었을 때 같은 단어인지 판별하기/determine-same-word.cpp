@@ -13,31 +13,23 @@ int main()
     cin >> word2;
 
     // Please write your code here.
-    const int size = (int)('z' - 'a') + 1;
-    int cnt1[size] = { 0 };
-    int cnt2[size] = { 0 };
+    sort(word1.begin(), word1.end());
+    sort(word2.begin(), word2.end());
+
     bool isNo = false;
-    int n = max(word1.length(), word2.length());
+
+    for (int i = 0; i < min(word1.length(), word2.length()); i++)
+    {
+        if (word1[i] != word2[i])
+        {
+            isNo = true;
+            break;
+        }
+    }
+
     if (word1.length() != word2.length())
     {
         isNo = true;
-    }
-    else
-    {
-        for (int i = 0; i < n; i++)
-        {
-            cnt1[word1[i] - 'a'] += 1;
-            cnt2[word2[i] - 'a'] += 1;
-        }
-
-        for (int i = 0; i < n; i++)
-        {
-            if (cnt1[i] != cnt2[i])
-            {
-                isNo = true;
-                break;
-            }
-        }
     }
 
     if (isNo)
