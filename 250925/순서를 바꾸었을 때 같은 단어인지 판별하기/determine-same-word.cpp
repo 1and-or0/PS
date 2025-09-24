@@ -26,8 +26,8 @@ int main()
     {
         for (int i = 0; i < n; i++)
         {
-            cnt1[word1[i]] += 1;
-            cnt2[word2[i]] += 1;
+            cnt1[word1[i] - 'a'] += 1;
+            cnt2[word2[i] - 'a'] += 1;
         }
 
         for (int i = 0; i < n; i++)
