@@ -31,11 +31,12 @@ int main()
     sort(points.begin(), points.end(), [](_point a, _point b) {
         if (a.x != b.x)
             return a.x < b.x;
-        return a.where > b.where; // start�� end���� ���� ó��
+        return a.where > b.where; // start가 end보다 먼저 처리
         });
 
     int cnt = 0, max_cnt = 0;
-    double ans_start = 0, max_start = 0, max_end = 0;
+    double max_start = 0, max_end = 0;
+    bool in_max_interval = false;
     for (auto p: points)
     {
         if (p.where == Point_t::start)
@@ -45,18 +46,23 @@ int main()
             {
                 max_cnt = cnt;
                 max_start = p.x;
+                in_max_interval = true;
             }
         }
         else // p.where == Point_t::end
         {
-            if (cnt == max_cnt)
+            if (in_max_interval && cnt == max_cnt)
+            {
+                in_max_interval = false;
                 max_end = p.x;
+            }
             cnt--;
         }
     }
 
-    // cout << max_cnt << endl;
-    cout << "max count: " << max_cnt << endl;
-    cout << "max: [" << max_start << ", " << max_end << "]" << endl;
+    cout << max_cnt << endl;
+    //cout << "max count: " << max_cnt << endl;
+    //cout << "max: [" << max_start << ", " << max_end << "]" << endl;
+
     return 0;
 }
