@@ -31,7 +31,7 @@ int main()
     sort(points.begin(), points.end(), [](_point a, _point b) {
         if (a.x != b.x)
             return a.x < b.x;
-        return a.where > b.where; // start°¡ endº¸´Ù ¸ÕÀú Ã³¸®
+        return a.where > b.where; // startï¿½ï¿½ endï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½
         });
 
     int cnt = 0, max_cnt = 0;
@@ -55,8 +55,8 @@ int main()
         }
     }
 
-    cout << max_cnt << endl;
-    //cout << "max count: " << max_cnt << endl;
-    //cout << "max: [" << max_start << ", " << max_end << "]" << endl;
+    // cout << max_cnt << endl;
+    cout << "max count: " << max_cnt << endl;
+    cout << "max: [" << max_start << ", " << max_end << "]" << endl;
     return 0;
 }
