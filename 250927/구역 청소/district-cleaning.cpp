@@ -9,19 +9,41 @@ int main() {
     cin >> c >> d;
 
     // Please write your code here.
-    bool isLap = !(b < c || d < a);
+    int arr[100 + 1] = { 0 };
 
-    // 겹친다면
-    if (isLap)
+    arr[a] += 1;
+    arr[b] -= 1;
+    arr[c] += 1;
+    arr[d] -= 1;
+    
+    int ans = 0; //청소된 구역
+    int ans_start = -1, ans_end = -1;
+    bool is_started = false, is_ended = false;
+    int cnt = 0;
+    for (int i = 0; i < 100 + 1; i++)
     {
-        int min = a > c ? c : a;
-        int max = b > d ? b : d;
-        cout << max - min << endl;
+        cnt += arr[i];
+        if (cnt > 0 && !is_started)
+        {
+            is_started = true;
+            ans_start = i;
+        }
+        else if (cnt == 0) // 청소끝난 부분
+        {
+            // 청소를 시작하지 않았다면
+            if (!is_started)
+            {
+                continue;
+            }
+
+            is_started = false;
+            ans_end = i;
+            ans += ans_end - ans_start;
+        }
+
     }
-    else // 겹치지 않는다면
-    {
-        cout << b - a + d - c << endl;
-    }
+
+    cout << ans << endl;
 
     return 0;
 }
