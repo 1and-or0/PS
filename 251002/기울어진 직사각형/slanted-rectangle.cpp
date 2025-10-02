@@ -19,6 +19,7 @@ int ans = 0;
 
 struct MyStruct
 {
+	int start_x = 0, start_y = 0;
     int x = 0, y = 0;
     int n_dir = ONE;
 	int change_dir_count = 0;
@@ -27,6 +28,8 @@ struct MyStruct
 
 	MyStruct(int x, int y, int n_dir, int sum, bool (&is_visit)[20][20])
     {
+		this->start_x = x;
+		this->start_y = y;
         this->x = x;
         this->y = y;
 		this->n_dir = n_dir;
@@ -72,6 +75,13 @@ void go_straight(MyStruct cur, vector<MyStruct>& v)
     // 방문했다면
     if (cur.is_visit[cur.x][cur.y])
     {
+        // 시작점이 아닐경우
+        if (cur.x != cur.start_x || cur.y != cur.start_y)
+        {
+            return;
+        }
+
+		// 상자가 그려졌을 때 최댓값 갱신
         if (ans < cur.sum)
         {
             ans = cur.sum;
@@ -86,15 +96,14 @@ void go_straight(MyStruct cur, vector<MyStruct>& v)
 
 void go_next_dir(MyStruct cur, vector<MyStruct>& v)
 {
-    // 상자가 그려졌나 확인
-    if (cur.change_dir_count >= 4)
+    // 다음 방향으로 방향 변경
+	cur.n_dir = (cur.n_dir + 1);
+
+    // 4번 이상 방향 변경 불가
+    if (cur.n_dir > FOUR)
     {
 		return;
     }
-
-    // 다음 방향으로 방향 변경
-	cur.n_dir = (cur.n_dir + 1);    
-	cur.change_dir_count += 1;
 
     // 해당 방향으로 직진
 	go_straight(cur, v);
